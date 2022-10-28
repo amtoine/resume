@@ -1,0 +1,352 @@
+    % FortySecondsCV LaTeX template
+% Copyright © 2019-2020 René Wirnata <rene.wirnata@pandascience.net>
+% Licensed under the 3-Clause BSD License. See LICENSE file for details.
+%
+% Please visit https://github.com/PandaScience/FortySecondsCV for the most
+% recent version! For bugs or feature requests, please open a new issue on
+% github.
+%
+% Contributors
+% ------------
+% * ifokkema
+% * Bertbk
+% * Hespe
+%
+% Attributions
+% ------------
+% * fortysecondscv is based on the twentysecondcv class by Carmine Spagnuolo
+%   (cspagnuolo@unisa.it), released under the MIT license and available under
+%   https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
+% * further attributions are indicated immediately before corresponding code
+
+
+%-------------------------------------------------------------------------------
+%                             ADDITIONAL PACKAGES
+%-------------------------------------------------------------------------------
+\documentclass[
+	a4paper,
+	% showframes,
+	% vline=2.2em,
+	% maincolor=cvgreen,
+	% sidecolor=gray!50,
+	% sectioncolor=red,
+	% subsectioncolor=orange,
+	% itemtextcolor=black!80,
+	% sidebarwidth=0.4\paperwidth,
+	% topbottommargin=0.03\paperheight,
+	% leftrightmargin=20pt,
+	% profilepicsize=4.5cm,
+	% profilepicborderwidth=3.5pt,
+	% profilepicstyle=profilecircle,
+	% profilepiczoom=1.0,
+	% profilepicxshift=0mm,
+	% profilepicyshift=0mm,
+	% profilepicrounding=1.0cm,
+]{fortysecondscv}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% uncomment in case you don't want any hyphenation
+% \usepackage[none]{hyphenat}
+
+% take care of proper font encoding
+\ifxetexorluatex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+%	\newfontfamily\headingfont[Path = fonts/]{segoeuib.ttf} % local font
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+%	\usepackage[sfdefault]{noto} % use noto google font
+\fi
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% bubble diagram configuration
+\usepackage{smartdiagram}
+\smartdiagramset{
+	% default font size is \large, so adjust to harmonize with sidebar layout
+	bubble center node font = \footnotesize,
+	bubble node font = \footnotesize,
+	% default: 4cm/2.5cm; make minimum diameter relative to sidebar size
+	bubble center node size = 0.4\sidebartextwidth,
+	bubble node size = 0.25\sidebartextwidth,
+	distance center/other bubbles = 1.5em,
+	% set center bubble color
+	bubble center node color = maincolor!70,
+	% define the list of colors usable in the diagram
+	set color list = {maincolor!10, maincolor!40,
+	maincolor!20, maincolor!60, maincolor!35},
+	% sets the opacity at which the bubbles are shown
+	bubble fill opacity = 0.8,
+}
+
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+%% mandatory information
+% your name
+\cvname{STEVAN Antoine}
+% job title/career
+\cvjobtitle{Data Science Student,\\[0.2em] Reinforcement Learning \newline Intern at InstaDeep, Paris}
+
+%% optional information
+% profile picture
+%\cvprofilepic{pics/profile.png}
+
+% NOTE: ordering in sidebar will mimic the following order
+% date of birth
+\cvbirthday{March 29, 1999}
+% short address/location, use \newline if more than 1 line is required
+% \cvaddress{76 rue de Roaminville, 93260, Paris, France}
+\cvaddress{37 chemin du Prieure, 17000, La Rochelle, France}
+% phone number
+\cvphone{+33 7 64 42 97 00}
+% personal website
+%\cvsite{https://a2n-s.github.io/graphic.github.io/}
+% email address
+\cvmail{Antoine.stevan@student.isae-supaero.fr}
+% pgp key
+%\cvkey{4096R/FF00FF00}{0xAABBCCDDFF00FF00}
+% any other custom entry
+%\cvcustomdata{\faFlag}{Chinese}
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+	% include gosquare national flags from https://github.com/gosquared/flags;
+	% naming according to ISO 3166-1 alpha-2 country codes
+	\graphicspath{{pics/flags/}}
+
+	% social network accounts incl. proper hyperlinks
+	\profilesection{Social Network}
+		\begin{icontable}{2.5em}{1em}
+			\social{\faLinkedin}
+				{https://www.linkedin.com/in/antoine-stevan/}
+				{\underline{Professional page}}
+			\social{\faGithub}
+				{https://github.com/a2n-s}
+				{\underline{Computer science projects page}}
+		\end{icontable}
+
+	\profilesection{Languages}
+        \skill{\flag{FR.png}}{French - native speaker}
+        \skill{\flag{GB.png}}{English - fluent}
+        \skill{\flag{DE.png}}{German - very good}
+        \skill{\flag{JPN.png}}{Japanese - beginner}
+        \skill{\includegraphics[scale=.3]{pics/lsf.png}}{LSF - beginner}
+        
+	\profilesection{Hard Skills}
+		\skill{\faWindows}{Linux, Arch, Windows, VMs}
+		\skill{\faCode}{Python, LaTeX, C, C++, Java, Processing, Assembly, Arduino, CamL, Racket}
+		\skill{\faList}{MySQL, PostGreSQL, Redis}
+		\skill{\faFlask}{PyTorch, NumPy, Pandas, SciPy, Scikit-Learn}
+		\skill{\faTty}{sh, bash, ssh, git, docker}
+		\skill{\faDesktop}{Jupyter, Google Colab, Google Cloud, Cluster Computing, SpreadSheet, Gimp, Blender}
+		\skill{\faCloud}{markdown, org, css, JavaScript, html}
+
+	\profilesection{Soft Skills}
+    	\begin{sidebarminipage}
+    		\chartlabel[lightblue]{Dedicated}
+    		\chartlabel[lightblue]{Intrinsically curious}
+    		\chartlabel[lightblue]{Calm under pressure}
+    		\chartlabel[lightblue]{Versatile}
+    		\chartlabel[lightblue]{Fast-learner}
+    		\chartlabel[lightblue]{Spontaneous}
+    		\chartlabel[lightblue]{Honest}
+    		\chartlabel[lightblue]{Open-minded}
+    	\end{sidebarminipage}
+}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 2nd PAGE
+%-------------------------------------------------------------------------------
+\addtobacksidebar{
+	\profilesection{Memberships}
+    	\begin{memberships}
+    		\membership[4em]{pics/instadeep.logo.png}
+    		{
+    		    \href{https://www.instadeep.com/}{\underline{InstaDeep}}, "decision making AI for the enterprise" 
+    		}
+    		\membership[4em]{pics/sureli.png}
+    		{
+        		The \href{https://github.com/SuReLI}{\underline{SuReLI lab}}\newline
+    		}
+    		\membership[3em]{pics/isae.png}
+    		{
+    	    	VP of the    		    \textit{\href{https://github.com/Supaero-Computer-Science-Club}{Supaero Computer Science Club}}\newline
+    		}
+    		\membership[4em]{pics/innovspace.png}
+    		{
+    		    The \href{https://sites.google.com/view/innovspace}{\underline{InnovSpace}} of Supaero
+    		}
+    	\end{memberships}
+}
+
+
+%-------------------------------------------------------------------------------
+%                     TABLE ENTRIES RIGHT COLUMN: FIRST PAGE
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makefrontsidebar
+\cvsection{About me \& Objectives}
+    \cvsubsection{
+        Interested in ML \& RL, language and human-machine interactions.\newline
+        Master of science, $3^{rd}$ year student at ISAE-Supaero, research track.\newline
+        I am applying to the 2022-2023 year in the MVA Master's 2 degree to further my knowledge of Machine Learning and its foundations.
+    }
+
+\cvsection{Working Experience}
+% cd\cvsubsection{Recent experiences.}
+\begin{cvtable}[4]
+	\cvitem
+    	{april 2022 -- sept. 2022}
+    	{$3^{rd}$ year internship (end of study at Supaero) \newline (5 months)}
+    	{InstaDeep, Paris}
+    	{
+    	    Advance research and help firms with Multi-Objective RL (MORL).
+        	\begin{itemize}
+        	    \item Explore and benchmark existing MORL algorithms.
+        	    \item Propose and implement new techniques using RL research.
+        	    \item Give concrete solutions to be deployed as production tools.
+        	\end{itemize}
+        	 \chartlabel[maincolor]{Multi-Objective RL} \chartlabel[lightblue]{Team work} \chartlabel[lightblue]{Code and ideas coordination}
+    	}
+	\cvitem
+    	{july 2021 -- august 2021}
+    	{$2^{nd}$ year internship \newline (7 weeks)}
+    	{SuReLI, ISAE-supaero}
+    	{
+        	Continuation of the previous research topic of my PIR project:
+        	\begin{itemize}
+        	    \item Further in the disentanglement model \& learning technique.
+        	\end{itemize}
+        	\chartlabel[maincolor]{Full ML pipeline} \chartlabel[maincolor]{Image processing} \chartlabel[maincolor]{Imitation RL}\newline
+        	\chartlabel[lightblue]{Autonomy} \chartlabel[lightblue]{Talking about my work} \chartlabel[lightblue]{Resilience to failure}
+    	}
+	\cvitem
+    	{january 2021 -- july 2021}
+    	{\textit{Innovation \& Research Project} (PIR)\newline (5 months)}
+    	{ISAE-Supaero}
+    	{
+    	    First research experience leading to a paper with academic level.\newline
+            Title: \textit{Applying Disentanglement for Domain Adaptation to RL}.
+            \begin{itemize}
+                \item Key questions and techniques of disentanglement.
+                \item Short paper submitted to the ISAE-Supaero.
+            \end{itemize}
+        	\chartlabel[maincolor]{Image processing} \chartlabel[maincolor]{Disentanglement} \chartlabel[maincolor]{Submitting a paper}\newline
+        	\chartlabel[lightblue]{Writing communication} \chartlabel[lightblue]{Oral presentation} \chartlabel[lightblue]{Fast learning}
+    	}
+	\cvitem
+    	{nov. 2020 -- april 2021}
+    	{Tutor for students \newline (6 months / part-time)}
+    	{ISAE-Supaero}
+    	{
+    	    \begin{itemize}
+            	\item Organized support sessions about basic or deeper notions.
+            	\item Helped students to graduate their $2^{nd}$ year.
+    	    \end{itemize}
+        	\chartlabel[lightblue]{Patience}\chartlabel[lightblue]{Popularization skill}\chartlabel[lightblue]{Time Management}
+    	}
+	\cvitem
+    	{october 2020 -- may 2021}
+    	{Part-time operator \newline (8 months)}
+    	{ISAE-Supaero, InnovSpace}
+    	{
+    	    \begin{itemize}
+            	\item Managed ISAE-Supaero's InnovSpace during my free-time.
+            	\item Watched the place, the tools and helped users.
+    	    \end{itemize}
+        	\chartlabel[maincolor]{Manual tools} \chartlabel[maincolor]{Professional management}\newline
+        	\chartlabel[lightblue]{Dedication} \chartlabel[lightblue]{Autonomy}
+    	}
+\end{cvtable}
+\cvsignature
+
+%-------------------------------------------------------------------------------
+%                     TABLE ENTRIES RIGHT COLUMN: SECOND PAGE
+%-------------------------------------------------------------------------------
+\newpage
+\makebacksidebar
+\cvsubsection{Past experiences}
+\begin{cvtable}[2]
+	\cvitem
+    	{july 2020 -- august 2020}
+    	{$1^{st}$ year internship\newline (8 weeks)}
+    	{Naval Force 3, La Rochelle, France}
+    	{
+	        Naval Force 3 is a private shipyard (SME) in La Rochelle.
+    	    \begin{itemize}
+            	\item First experience in a firm.
+            	\item Discovered how it is managed and difficulties due to crisis.
+    	    \end{itemize}
+        	\chartlabel[maincolor]{Building nautical objects} \chartlabel[maincolor]{Resin techniques}\newline
+        	\chartlabel[lightblue]{Managing a workshop} \chartlabel[lightblue]{Going out of comfort zone}
+    	}
+	\cvitem
+    	{sept. 2018 -- june 2019}
+    	{Research school project (TIPE) \newline (9 months / part-time)}
+    	{Georges Clemenceau, Nantes, France}
+    	 {
+            First research experience.
+    	    \begin{itemize}
+            	\item Optimization of the urban space through simulation.
+            	\item Learning-based algorithm to facilitate pedestrian traffic.
+    	    \end{itemize}
+        	\chartlabel[maincolor]{Problem statement} \chartlabel[maincolor]{Evolutionary algorithms}\newline
+        	\chartlabel[lightblue]{Autonomy} \chartlabel[lightblue]{Oral communication}
+    	}
+\end{cvtable}
+
+
+\cvsection{Education}
+% \cvsubsection{Study}
+\begin{cvtable}[1.5]
+	\cvitem{2019 -- 2022}{ISAE-Supaero}{Toulouse, France}
+	{
+    	The \textit{Aeronautic \& Space Superior Institute} in France. \newline
+        Currently attending the \textit{Data Science \& Decision Making} (SDD) class:
+        \begin{itemize}
+            \item geometrical, probabilistic and connectionist approaches
+            \item commitee-based ML, Deep Learning and RL.
+            \item stochastic optimization and evolution.
+        \end{itemize}
+	}
+	\cvitem{2017 -- 2019}{Preparatory Class [MPSI, MP, computer science]}{Georges Clemenceau High School, Nantes}{French class to prepare for highly selective graduate schools. \newline}
+	\cvitem{2014 -- 2017}{High school [engineering sciences and computer science]}{Léonce Vieljeux High School, France}{Good results in high schools opens the way to preparatory classes after graduation, which are selective classes.}
+
+\end{cvtable}
+
+%\cvsection{Publications}
+%\cvsection{Awards}
+\cvsection{Diplomas}
+	\cvpubitem{Bachelor's degree}{Bachelor science diploma}
+		{}{2020}
+	\cvpubitem{TOEFL PBT}{607/677 (B2/C1)}
+	    {}{2019}
+	\cvpubitem{Graduate schools entrance examination}{Successful examination for the highly selective Mines school bank.}
+	    {}{2019}
+	\cvpubitem{Baccalauréat (bac)}{Mention: very good}
+		{}{2017}
+
+\cvsection{Extra-Curricular Activities}
+    \begin{cvtable}
+    	\cvitemshort{\includegraphics[scale=0.01]{pics/arch.png} Arch}{Configuring and building software for my ArchLinux distro.}
+    	\cvitemshort{\faCloud ~ Website}{I document my Arch configuration on my websites.}
+    	\cvitemshort{\faGamepad ~ Projects}{Coding games in the SCSC or ML algorithms in my free time for fun.}
+    	\cvitemshort{\faPaintBrush ~ Epoxy}{An artistic pane out of wood and resin to decorate my place.}
+    	\cvitemshort{\faDesktop ~ Computer}{6502 $\mu$-computer, on breadboard, with custom games in assembly.}
+    	\cvitemshort{\faDesktop ~ 8-bit CPU}{A CPU out of logic gates with custom assembly.}
+    \end{cvtable}
+\cvsignature
+
+\end{document}
