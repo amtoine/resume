@@ -5,6 +5,9 @@ LATEX="latexmk"
 CLEAN="$LATEX -C"
 C_FLAGS="-shell-escape -pdf"
 
+$CLEAN
+$LATEX $C_FLAGS main.tex
+
 pdf_viewer="$1"
 
 if [ -z "$pdf_viewer" ]; then
@@ -16,8 +19,5 @@ if ! (which "$pdf_viewer" &> /dev/null); then
   echo "resume: $pdf_viewer: No such file or directory"
   exit 1
 fi
-
-$CLEAN
-$LATEX $C_FLAGS main.tex
 
 $pdf_viewer main.pdf 
