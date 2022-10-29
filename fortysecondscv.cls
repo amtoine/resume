@@ -315,7 +315,7 @@
 % useful shortcuts
 % NOTE: we use href instead of url so user can decide textformatting since url
 % automatically uses \texttt{} as format for the url
-\newcommand*{\link}[2]{\href{#1}{#2}}
+\newcommand*{\link}[2]{\href{#1}{\color{blue}\underline{#2}}}
 \newcommand*{\cvbirthday}[1]{\cvcustomdata{\faUser}{#1}}
 \newcommand*{\cvaddress}[1]{\cvcustomdata{\faEnvelope}{#1}}
 \newcommand*{\cvphone}[1]{\cvcustomdata{\faPhone}{#1}}
