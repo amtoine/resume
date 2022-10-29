@@ -296,7 +296,7 @@
 
 % social network item; \social{<icon>}{<url>}{<text>}
 \newcommand*{\social}[3]{%
-	\socialicon{#1} & \href{#2}{#3}\\%
+	\socialicon{#1} & \link{#2}{#3}\\%
 }
 
 % personal information item; \personal{<icon>}{<text>}
@@ -315,13 +315,14 @@
 % useful shortcuts
 % NOTE: we use href instead of url so user can decide textformatting since url
 % automatically uses \texttt{} as format for the url
+\newcommand*{\link}[2]{\href{#1}{#2}}
 \newcommand*{\cvbirthday}[1]{\cvcustomdata{\faUser}{#1}}
 \newcommand*{\cvaddress}[1]{\cvcustomdata{\faEnvelope}{#1}}
 \newcommand*{\cvphone}[1]{\cvcustomdata{\faPhone}{#1}}
-\newcommand*{\cvsite}[2]{\cvcustomdata{\faGlobe}{\href{#2}{#1}}}
-\newcommand*{\cvmail}[1]{\cvcustomdata{\faAt}{\href{mailto:#1}{#1}}}
+\newcommand*{\cvsite}[2]{\cvcustomdata{\faGlobe}{\link{#2}{#1}}}
+\newcommand*{\cvmail}[1]{\cvcustomdata{\faAt}{\link{mailto:#1}{#1}}}
 \newcommand*{\cvkey}[2]{\cvcustomdata{\faKey}{%
-	\href{https://keys.openpgp.org/search?q=#2}{#1}%
+	\link{https://keys.openpgp.org/search?q=#2}{#1}%
 }}
 
 % TODO find a cleaner solution for consistent spacing
