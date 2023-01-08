@@ -20,3 +20,9 @@ Compilation files can be cleaned with either `./clean.sh` or `latexmk -C`.
 A `main.pdf` file should have been created by the above section.
 
 Simply open it with your prefered `.pdf` viewer!
+
+
+## Alternative
+One can also use the `resume` and `clean` scripts:
+- `./resume` or `./resume {{PDF_VIEWER}}` to compile and/or view the `PDF`
+- `./clean` to remove compilation files
