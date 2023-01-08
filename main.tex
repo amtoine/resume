@@ -92,7 +92,7 @@
 % your name
 \cvname{STEVAN Antoine}
 % job title/career
-\cvjobtitle{Data Science Student,\\[0.2em] Reinforcement Learning \newline Intern at InstaDeep, Paris}
+\cvjobtitle{Post-graduate engineer}
 
 %% optional information
 % profile picture
@@ -102,16 +102,15 @@
 % date of birth
 \cvbirthday{March 29, 1999}
 % short address/location, use \newline if more than 1 line is required
-% \cvaddress{76 rue de Roaminville, 93260, Paris, France}
-\cvaddress{37 chemin du Prieure, 17000, La Rochelle, France}
+\cvaddress{14 chemin du Valon, 17000, Toulouse, France}
 % phone number
 \cvphone{+33 7 64 42 97 00}
 % personal website
-%\cvsite{https://a2n-s.github.io/graphic.github.io/}
+\cvsite{amtoine.github.io}{https://amtoine.github.io/public}
 % email address
-\cvmail{Antoine.stevan@student.isae-supaero.fr}
+\cvmail{stevan.antoine@gmail.com}
 % pgp key
-%\cvkey{4096R/FF00FF00}{0xAABBCCDDFF00FF00}
+\cvkey{86CFF1AB}{stevan.antoine@gmail.com}
 % any other custom entry
 %\cvcustomdata{\faFlag}{Chinese}
 
@@ -129,10 +128,13 @@
 		\begin{icontable}{2.5em}{1em}
 			\social{\faLinkedin}
 				{https://www.linkedin.com/in/antoine-stevan/}
-				{\underline{Professional page}}
+				{My professional page}
 			\social{\faGithub}
-				{https://github.com/a2n-s}
-				{\underline{Computer science projects page}}
+				{https://github.com/amtoine}
+				{All my open source projects}
+			\social{\faLinux}
+				{https://github.com/goatfiles}
+				{My Linux endeavour}
 		\end{icontable}
 
 	\profilesection{Languages}
@@ -143,13 +145,67 @@
         \skill{\includegraphics[scale=.3]{res/images/lsf.png}}{LSF - beginner}
         
 	\profilesection{Hard Skills}
-		\skill{\faWindows}{Linux, Arch, Windows, VMs}
-		\skill{\faCode}{Python, LaTeX, C, C++, Java, Processing, Assembly, Arduino, CamL, Racket}
-		\skill{\faList}{MySQL, PostGreSQL, Redis}
-		\skill{\faFlask}{PyTorch, NumPy, Pandas, SciPy, Scikit-Learn}
-		\skill{\faTty}{sh, bash, ssh, git, docker}
-		\skill{\faDesktop}{Jupyter, Google Colab, Google Cloud, Cluster Computing, SpreadSheet, Gimp, Blender}
-		\skill{\faCloud}{markdown, org, css, JavaScript, html}
+		\skill{\faWindows}{
+			Linux,
+			Arch,
+			Windows,
+			VMs
+		}
+		\skill{\faCode}{
+			\texttt{python},
+			\texttt{rust},
+			\texttt{oberon},
+			\texttt{LaTeX},
+			\texttt{C},
+			\texttt{C++},
+			\texttt{java},
+			processing,
+			Assembly,
+			Arduino,
+			\texttt{CamL},
+			\texttt{Racket},
+		}
+		\skill{\faList}{
+			MySQL,
+			PostGreSQL,
+			Redis
+		}
+		\skill{\faFlask}{
+			JAX,
+			PyTorch,
+			NumPy,
+			Pandas,
+			SciPy,
+			Scikit-Learn
+		}
+		\skill{\faTty}{
+			\texttt{sh},
+			\texttt{bash},
+			\texttt{fish},
+			\texttt{nushell},
+			\texttt{ssh},
+			\texttt{git},
+			\texttt{docker},
+		}
+		\skill{\faDesktop}{
+			Jupyter,
+			Google
+			Colab,
+			Google
+			Cloud,
+			Cluster
+			Computing,
+			SpreadSheet,
+			Gimp,
+			Blender
+		}
+		\skill{\faCloud}{
+			\texttt{markdown},
+			\texttt{org},
+			\texttt{css},
+			\texttt{JavaScript},
+			\texttt{html},
+		}
 
 	\profilesection{Soft Skills}
     	\begin{sidebarminipage}
@@ -173,19 +229,30 @@
     	\begin{memberships}
     		\membership[4em]{res/images/instadeep.logo.png}
     		{
-    		    \href{https://www.instadeep.com/}{\underline{InstaDeep}}, "decision making AI for the enterprise" 
+    		    \link{https://www.instadeep.com/}{InstaDeep}, "decision making AI for the enterprise" 
+				\newline
+				(2022/04 - 2022/08)
     		}
     		\membership[4em]{res/images/sureli.png}
     		{
-        		The \href{https://github.com/SuReLI}{\underline{SuReLI lab}}\newline
+        		The \link{https://github.com/SuReLI}{SuReLI lab}
+				\newline
+				(2020 - 2021)
+				\newline
     		}
     		\membership[3em]{res/images/isae.png}
     		{
-    	    	VP of the    		    \textit{\href{https://github.com/Supaero-Computer-Science-Club}{Supaero Computer Science Club}}\newline
+    	    	VP of the ISAE-Supaero \textit{\link{https://github.com/iScsc}{Computer Science Club}}
+				\newline
+				(2020 - now)
+				\newline
     		}
     		\membership[4em]{res/images/innovspace.png}
     		{
-    		    The \href{https://sites.google.com/view/innovspace}{\underline{InnovSpace}} of Supaero
+    		    The \link{https://sites.google.com/view/innovspace}{InnovSpace} of Supaero
+				\newline
+				(2019 - now)
+				\newline
     		}
     	\end{memberships}
 }
@@ -199,14 +266,25 @@
 \makefrontsidebar
 \cvsection{About me \& Objectives}
     \cvsubsection{
-        Interested in ML \& RL, language and human-machine interactions.\newline
-        Master of science, $3^{rd}$ year student at ISAE-Supaero, research track.\newline
-        I am applying to the 2022-2023 year in the MVA Master's 2 degree to further my knowledge of Machine Learning and its foundations.
+        Interested in language compilation, safe and structured languages.
+		\newline
+		Interested in decentralized storage, cryptographic techniques and the \texttt{rust}
+		programming language as well,
+		I am applying for a fixed-term contract in the Dragoon project.
     }
 
 \cvsection{Working Experience}
 % cd\cvsubsection{Recent experiences.}
 \begin{cvtable}[4]
+	\cvitem
+    	{sept. 2022 -- dec. 2022}
+    	{internship \newline (4 months)}
+    	{ISAE-Supaero, Toulouse, France}
+    	{
+			Develop a native compiler for Oberon with the LLVM backend.
+			\chartlabel[maincolor]{Compilation}
+			\chartlabel[maincolor]{Oberon programming language}
+    	}
 	\cvitem
     	{april 2022 -- sept. 2022}
     	{$3^{rd}$ year internship (end of study at Supaero) \newline (5 months)}
@@ -218,7 +296,9 @@
         	    \item Propose and implement new techniques using RL research.
         	    \item Give concrete solutions to be deployed as production tools.
         	\end{itemize}
-        	 \chartlabel[maincolor]{Multi-Objective RL} \chartlabel[lightblue]{Team work} \chartlabel[lightblue]{Code and ideas coordination}
+			\chartlabel[maincolor]{Multi-Objective RL}
+			\chartlabel[lightblue]{Team work}
+			\chartlabel[lightblue]{Code and ideas coordination}
     	}
 	\cvitem
     	{july 2021 -- august 2021}
@@ -229,8 +309,9 @@
         	\begin{itemize}
         	    \item Further in the disentanglement model \& learning technique.
         	\end{itemize}
-        	\chartlabel[maincolor]{Full ML pipeline} \chartlabel[maincolor]{Image processing} \chartlabel[maincolor]{Imitation RL}\newline
-        	\chartlabel[lightblue]{Autonomy} \chartlabel[lightblue]{Talking about my work} \chartlabel[lightblue]{Resilience to failure}
+			\chartlabel[maincolor]{Image processing}
+			\chartlabel[maincolor]{Imitation RL}
+        	\chartlabel[lightblue]{Autonomy}
     	}
 	\cvitem
     	{january 2021 -- july 2021}
@@ -243,8 +324,9 @@
                 \item Key questions and techniques of disentanglement.
                 \item Short paper submitted to the ISAE-Supaero.
             \end{itemize}
-        	\chartlabel[maincolor]{Image processing} \chartlabel[maincolor]{Disentanglement} \chartlabel[maincolor]{Submitting a paper}\newline
-        	\chartlabel[lightblue]{Writing communication} \chartlabel[lightblue]{Oral presentation} \chartlabel[lightblue]{Fast learning}
+        	\chartlabel[maincolor]{Image processing}
+			\chartlabel[maincolor]{Disentanglement RL}
+        	\chartlabel[lightblue]{Communication}
     	}
 	\cvitem
     	{nov. 2020 -- april 2021}
@@ -255,7 +337,9 @@
             	\item Organized support sessions about basic or deeper notions.
             	\item Helped students to graduate their $2^{nd}$ year.
     	    \end{itemize}
-        	\chartlabel[lightblue]{Patience}\chartlabel[lightblue]{Popularization skill}\chartlabel[lightblue]{Time Management}
+        	\chartlabel[lightblue]{Patience}
+			\chartlabel[lightblue]{Popularization}
+			\chartlabel[lightblue]{Scheduling}
     	}
 	\cvitem
     	{october 2020 -- may 2021}
@@ -266,8 +350,9 @@
             	\item Managed ISAE-Supaero's InnovSpace during my free-time.
             	\item Watched the place, the tools and helped users.
     	    \end{itemize}
-        	\chartlabel[maincolor]{Manual tools} \chartlabel[maincolor]{Professional management}\newline
-        	\chartlabel[lightblue]{Dedication} \chartlabel[lightblue]{Autonomy}
+        	\chartlabel[maincolor]{Manual tools}
+			\chartlabel[maincolor]{Management}
+			\chartlabel[lightblue]{Autonomy}
     	}
 \end{cvtable}
 \cvsignature
@@ -289,8 +374,8 @@
             	\item First experience in a firm.
             	\item Discovered how it is managed and difficulties due to crisis.
     	    \end{itemize}
-        	\chartlabel[maincolor]{Building nautical objects} \chartlabel[maincolor]{Resin techniques}\newline
-        	\chartlabel[lightblue]{Managing a workshop} \chartlabel[lightblue]{Going out of comfort zone}
+        	\chartlabel[maincolor]{Resin-based manufacturating}
+        	\chartlabel[lightblue]{Workshop management}
     	}
 	\cvitem
     	{sept. 2018 -- june 2019}
@@ -302,8 +387,9 @@
             	\item Optimization of the urban space through simulation.
             	\item Learning-based algorithm to facilitate pedestrian traffic.
     	    \end{itemize}
-        	\chartlabel[maincolor]{Problem statement} \chartlabel[maincolor]{Evolutionary algorithms}\newline
-        	\chartlabel[lightblue]{Autonomy} \chartlabel[lightblue]{Oral communication}
+        	\chartlabel[maincolor]{Problem statement}
+			\chartlabel[maincolor]{EA}
+			\chartlabel[lightblue]{Communication}
     	}
 \end{cvtable}
 
@@ -329,6 +415,8 @@
 %\cvsection{Publications}
 %\cvsection{Awards}
 \cvsection{Diplomas}
+	\cvpubitem{ISAE Supaero}{Engineer graduate diploma}
+		{}{2022}
 	\cvpubitem{Bachelor's degree}{Bachelor science diploma}
 		{}{2020}
 	\cvpubitem{TOEFL PBT}{607/677 (B2/C1)}
@@ -340,9 +428,16 @@
 
 \cvsection{Extra-Curricular Activities}
     \begin{cvtable}
-    	\cvitemshort{\includegraphics[scale=0.01]{res/images/arch.png} Arch}{Configuring and building software for my ArchLinux distro.}
-    	\cvitemshort{\faCloud ~ Website}{I document my Arch configuration on my websites.}
-    	\cvitemshort{\faGamepad ~ Projects}{Coding games in the SCSC or ML algorithms in my free time for fun.}
+    	\cvitemshort{
+			\includegraphics[scale=0.01]{res/images/arch.png} Arch
+		}{Building software and configuration for my ArchLinux system.}
+		\cvitemshort{\faBook ~ Books}{
+			I follow the \link{https://proto.school/course/ipfs}{\textit{IPFS}},
+			\link{https://doc.rust-lang.org/stable/book/}{\texttt{rust}} and
+			\link{https://www.nushell.sh/book/}{\texttt{nushell}} books.}
+    	\cvitemshort{\faCloud ~ Web}{I maintain my personal website and the Oberon compiler portal.}
+    	\cvitemshort{\faGamepad ~ Projects}{Web and linux dev in the ISCSC, personal free projets.}
+    	\cvitemshort{\faPaintBrush ~ Paint}{Assembly and painting of miniatures.}
     	\cvitemshort{\faPaintBrush ~ Epoxy}{An artistic pane out of wood and resin to decorate my place.}
     	\cvitemshort{\faDesktop ~ Computer}{6502 $\mu$-computer, on breadboard, with custom games in assembly.}
     	\cvitemshort{\faDesktop ~ 8-bit CPU}{A CPU out of logic gates with custom assembly.}
