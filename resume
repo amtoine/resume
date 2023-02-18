@@ -5,6 +5,22 @@ LATEX="latexmk"
 CLEAN="$LATEX -C"
 C_FLAGS="-shell-escape -pdf"
 
+if ! (which "$LATEX" &> /dev/null); then
+  echo "resume: $LATEX: No such file or directory"
+  echo "[tip] try installing the latexmk package (latexmk on ubuntu and ArchLinux)"
+  echo "[tip] you might also want to install the full TEX suite (texlive-full on ubuntu and texlive-most on ArchLinux)"
+  echo ""
+  echo "    ubuntu:"
+  echo "        sudo apt update"
+  echo "        sudo apt upgrade"
+  echo "        sudo apt install latexmk texlive-full"
+  echo ""
+  echo "    arch:"
+  echo "        sudo pacman -Syy"
+  echo "        sudo pacman -S latexmk texlive-most"
+  exit 1
+fi
+
 $CLEAN
 $LATEX $C_FLAGS main.tex
 
@@ -20,4 +36,9 @@ if ! (which "$pdf_viewer" &> /dev/null); then
   exit 1
 fi
 
-$pdf_viewer main.pdf 
+if [ ! -f main.pdf ]; then
+  echo "resume: main.pdf: No such file or directory"
+  exit 1
+fi
+
+$pdf_viewer main.pdf
