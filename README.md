@@ -1,6 +1,9 @@
 # resume
 My resume to apply to the jobs i dream about.
 
+> **Note**
+> please have a look at the [releases](https://github.com/amtoine/resume/releases) to download the latest pre-compiled resume!
+
 ## Compile the source code
 ### Dependencies
 In order to compile the source code into the final usable `.pdf` file, the easiest turns out to be to use the `latexmk` command.
