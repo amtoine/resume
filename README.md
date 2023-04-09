@@ -1,7 +1,7 @@
 # resume
 My resume to apply to the jobs i dream about.
 
-> **Note**
+> **Note**  
 > please have a look at the [releases](https://github.com/amtoine/resume/releases) to download the latest pre-compiled resume!
 
 ## Compile the source code
