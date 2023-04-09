@@ -7,7 +7,7 @@ my latest resume can be found [here](https://github.com/amtoine/resume/releases/
 > **Note**  
 > please have a look at the [releases](https://github.com/amtoine/resume/releases) to download any pre-compiled resume!
 
-## Compile the source code
+## :gear: Compile the source code
 ### Dependencies
 In order to compile the source code into the final usable `.pdf` file, the easiest turns out to be to use the `latexmk` command.
 
