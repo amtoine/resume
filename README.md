@@ -1,8 +1,11 @@
 # resume
 My resume to apply to the jobs i dream about.
 
+## :page_facing_up: get my resume
+my latest resume can be found [here](https://github.com/amtoine/resume/releases/latest).
+
 > **Note**  
-> please have a look at the [releases](https://github.com/amtoine/resume/releases) to download the latest pre-compiled resume!
+> please have a look at the [releases](https://github.com/amtoine/resume/releases) to download any pre-compiled resume!
 
 ## Compile the source code
 ### Dependencies
