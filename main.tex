@@ -102,11 +102,11 @@
 % date of birth
 \cvbirthday{March 29, 1999}
 % short address/location, use \newline if more than 1 line is required
-\cvaddress{14 chemin du Valon, 31400, Toulouse, France}
+\cvaddress{20 rue Marie Louise Dubreil Jacobin, 31400, Toulouse, France}
 % phone number
 \cvphone{+33 7 64 42 97 00}
 % personal website
-\cvsite{amtoine.github.io}{https://amtoine.github.io/public}
+\cvsite{amtoine.github.io}{https://amtoine.github.io}
 % email address
 \cvmail{stevan.antoine@gmail.com}
 % pgp key
@@ -128,13 +128,10 @@
 		\begin{icontable}{2.5em}{1em}
 			\social{\faLinkedin}
 				{https://www.linkedin.com/in/antoine-stevan/}
-				{My professional page}
+				{Me on LinkedIn}
 			\social{\faGithub}
 				{https://github.com/amtoine}
-				{All my open source projects}
-			\social{\faLinux}
-				{https://github.com/goatfiles}
-				{My Linux endeavour}
+				{Me as a software engineer}
 		\end{icontable}
 
 	\profilesection{Languages}
@@ -152,18 +149,19 @@
 			VMs
 		}
 		\skill{\faCode}{
-			\texttt{python},
-			\texttt{rust},
-			\texttt{oberon},
-			\texttt{LaTeX},
-			\texttt{C},
-			\texttt{C++},
-			\texttt{java},
-			processing,
+			Rust,
+			Nushell,
+			Python,
+			LaTeX,
+			C,
 			Assembly,
 			Arduino,
-			\texttt{CamL},
-			\texttt{Racket},
+			Oberon,
+			C++,
+			Java,
+			Processing,
+			oCamL,
+			Racket,
 		}
 		\skill{\faList}{
 			MySQL,
@@ -179,32 +177,30 @@
 			Scikit-Learn
 		}
 		\skill{\faTty}{
-			\texttt{sh},
+			Nushell,
+			Git,
+			SSH,
+			Docker,
 			\texttt{bash},
 			\texttt{fish},
-			\texttt{nushell},
-			\texttt{ssh},
-			\texttt{git},
-			\texttt{docker},
+			\texttt{sh},
 		}
 		\skill{\faDesktop}{
 			Jupyter,
-			Google
-			Colab,
+			Google Colab,
 			Google
 			Cloud,
-			Cluster
-			Computing,
+			Cluster Computing,
 			SpreadSheet,
 			Gimp,
 			Blender
 		}
 		\skill{\faCloud}{
 			\texttt{markdown},
+			HTML,
+			CSS,
 			\texttt{org},
-			\texttt{css},
 			\texttt{JavaScript},
-			\texttt{html},
 		}
 
 	\profilesection{Soft Skills}
@@ -227,6 +223,12 @@
 \addtobacksidebar{
 	\profilesection{Memberships}
     	\begin{memberships}
+    		\membership[3em]{res/images/nushell.logo.png}
+    		{
+    		    Core maintainer of \link{https://nushell.sh}{Nushell}, "A new type of shell"
+				\newline
+				(2023/03 - now)
+    		}
     		\membership[4em]{res/images/instadeep.logo.png}
     		{
     		    \link{https://www.instadeep.com/}{InstaDeep}, "decision making AI for the enterprise" 
@@ -244,14 +246,14 @@
     		{
     	    	VP of the ISAE-Supaero \textit{\link{https://github.com/iScsc}{Computer Science Club}}
 				\newline
-				(2020 - now)
+				(2020 - 2023)
 				\newline
     		}
     		\membership[4em]{res/images/innovspace.png}
     		{
     		    The \link{https://sites.google.com/view/innovspace}{InnovSpace} of Supaero
 				\newline
-				(2019 - now)
+				(2019 - 2023)
 				\newline
     		}
     	\end{memberships}
@@ -268,14 +270,24 @@
     \cvsubsection{
         Interested in language compilation, safe and structured languages.
 		\newline
-		Interested in decentralized storage, cryptographic techniques and the \texttt{rust}
+		Interested in distributed computation, cryptographic techniques, zero-knowledge proofs and the Rust
 		programming language as well,
-		I am applying for a fixed-term contract in the Dragoon project.
+		I am applying for a thesis with the Dragoon project.
     }
 
 \cvsection{Working Experience}
 % cd\cvsubsection{Recent experiences.}
 \begin{cvtable}[4]
+	\cvitem
+    	{jan. 2023 -- dec. 2026}
+    	{fixed-term contract \newline (4 years)}
+    	{ISAE-Supaero, Toulouse, France}
+    	{
+			Develop and compare ZK protocols applied to sharing and distributing data on peer-to-peer networks.
+			\chartlabel[maincolor]{Distributed storage}
+			\chartlabel[maincolor]{Zero-knowledge proofs}
+			\chartlabel[maincolor]{Rust}
+    	}
 	\cvitem
     	{sept. 2022 -- dec. 2022}
     	{internship \newline (4 months)}
@@ -341,6 +353,16 @@
 			\chartlabel[lightblue]{Popularization}
 			\chartlabel[lightblue]{Scheduling}
     	}
+\end{cvtable}
+\cvsignature
+
+%-------------------------------------------------------------------------------
+%                     TABLE ENTRIES RIGHT COLUMN: SECOND PAGE
+%-------------------------------------------------------------------------------
+\newpage
+\makebacksidebar
+\cvsubsection{Past experiences}
+\begin{cvtable}[2]
 	\cvitem
     	{october 2020 -- may 2021}
     	{Part-time operator \newline (8 months)}
@@ -354,16 +376,6 @@
 			\chartlabel[maincolor]{Management}
 			\chartlabel[lightblue]{Autonomy}
     	}
-\end{cvtable}
-\cvsignature
-
-%-------------------------------------------------------------------------------
-%                     TABLE ENTRIES RIGHT COLUMN: SECOND PAGE
-%-------------------------------------------------------------------------------
-\newpage
-\makebacksidebar
-\cvsubsection{Past experiences}
-\begin{cvtable}[2]
 	\cvitem
     	{july 2020 -- august 2020}
     	{$1^{st}$ year internship\newline (8 weeks)}
@@ -425,6 +437,7 @@
 	    {}{2019}
 	\cvpubitem{Baccalauréat (bac)}{Mention: very good}
 		{}{2017}
+\cvsignature
 
 \cvsection{Extra-Curricular Activities}
     \begin{cvtable}
@@ -433,8 +446,10 @@
 		}{Building software and configuration for my ArchLinux system.}
 		\cvitemshort{\faBook ~ Books}{
 			I follow the \link{https://proto.school/course/ipfs}{\textit{IPFS}},
-			\link{https://doc.rust-lang.org/stable/book/}{\texttt{rust}} and
-			\link{https://www.nushell.sh/book/}{\texttt{nushell}} books.}
+			\link{https://doc.rust-lang.org/stable/book/}{Rust},
+			\link{https://www.nushell.sh/book/}{Nushell} and
+			the \textit{Writing A \link{https://compilerbook.com/}{Compiler} / \link{https://interpreterbook.com/}{Interpreter} In Go} books
+		and the \link{https://frontendmasters.com/courses/algorithms/}{Last Algorithms Course You'll Need}.}
     	\cvitemshort{\faCloud ~ Web}{I maintain my personal website and the Oberon compiler portal.}
     	\cvitemshort{\faGamepad ~ Projects}{Web and linux dev in the ISCSC, personal free projets.}
     	\cvitemshort{\faPaintBrush ~ Paint}{Assembly and painting of miniatures.}
