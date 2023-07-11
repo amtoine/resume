@@ -1,0 +1,27 @@
+name: Build PDF resume
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "graduate*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: dependencies
+      run: |
+        sudo apt update && sudo apt upgrade
+        sudo apt install texlive-full latex-mk
+
+    - name: build
+      run: ./scripts/resume
+
+    - name: publish
+      uses: softprops/action-gh-release@v0.1.13
+      with:
+        files: main.pdf
