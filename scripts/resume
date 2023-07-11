@@ -28,7 +28,7 @@ pdf_viewer="$1"
 
 if [ -z "$pdf_viewer" ]; then
   echo "resume: no pdf viewer provided"
-  exit 1
+  exit 0
 fi
 
 if ! (which "$pdf_viewer" &> /dev/null); then
