@@ -85,45 +85,24 @@
 }
 
 
-%-------------------------------------------------------------------------------
-%                            PERSONAL INFORMATION
-%-------------------------------------------------------------------------------
 %% mandatory information
-% your name
 \cvname{STEVAN Antoine}
-% job title/career
 \cvjobtitle{Post-graduate engineer}
-
 %% optional information
-% profile picture
 %\cvprofilepic{res/images/profile.png}
-
-% NOTE: ordering in sidebar will mimic the following order
-% date of birth
 \cvbirthday{March 29, 1999}
-% short address/location, use \newline if more than 1 line is required
 \cvaddress{20 rue Marie Louise Dubreil Jacobin, 31400, Toulouse, France}
-% phone number
 \cvphone{+33 7 64 42 97 00}
-% personal website
 \cvsite{amtoine.github.io}{https://amtoine.github.io}
-% email address
 \cvmail{stevan.antoine@gmail.com}
-% pgp key
 \cvkey{86CFF1AB}{stevan.antoine@gmail.com}
-% any other custom entry
 %\cvcustomdata{\faFlag}{Chinese}
 
-%-------------------------------------------------------------------------------
-%                              SIDEBAR 1st PAGE
-%-------------------------------------------------------------------------------
-% add more profile sections to sidebar on first page
 \addtofrontsidebar{
     % include gosquare national flags from https://github.com/gosquared/flags;
     % naming according to ISO 3166-1 alpha-2 country codes
     \graphicspath{{res/images/flags/}}
 
-    % social network accounts incl. proper hyperlinks
     \profilesection{Social Network}
         \begin{icontable}{2.5em}{1em}
             \social{\faLinkedin}
@@ -216,247 +195,218 @@
         \end{sidebarminipage}
 }
 
-
-%-------------------------------------------------------------------------------
-%                              SIDEBAR 2nd PAGE
-%-------------------------------------------------------------------------------
 \addtobacksidebar{
     \profilesection{Memberships}
         \begin{memberships}
-            \membership[3em]{res/images/nushell.logo.png}
-            {
-                Core maintainer of \link{https://nushell.sh}{Nushell}, "A new type of shell"
-                \newline
-                (2023/03 - now)
+            \membership[3em]{res/images/nushell.logo.png}{
+                Core maintainer of \link{https://nushell.sh}{Nushell}, "A new type of shell"\newline
+                (2023/03 - now)\newline
             }
-            \membership[4em]{res/images/instadeep.logo.png}
-            {
-                \link{https://www.instadeep.com/}{InstaDeep}, "decision making AI for the enterprise"
-                \newline
-                (2022/04 - 2022/08)
+            \membership[4em]{res/images/instadeep.logo.png}{
+                \link{https://www.instadeep.com/}{InstaDeep}, "decision making AI for the enterprise"\newline
+                (2022/04 - 2022/08)\newline
             }
-            \membership[4em]{res/images/sureli.png}
-            {
-                The \link{https://github.com/SuReLI}{SuReLI lab}
-                \newline
-                (2020 - 2021)
-                \newline
+            \membership[4em]{res/images/sureli.png}{
+                The \link{https://github.com/SuReLI}{SuReLI lab}\newline
+                (2020 - 2021)\newline
             }
-            \membership[3em]{res/images/isae.png}
-            {
-                VP of the ISAE-Supaero \textit{\link{https://github.com/iScsc}{Computer Science Club}}
-                \newline
-                (2020 - 2023)
-                \newline
+            \membership[3em]{res/images/isae.png}{
+                VP of the ISAE-Supaero \textit{\link{https://github.com/iScsc}{Computer Science Club}}\newline
+                (2020 - 2023)\newline
             }
-            \membership[4em]{res/images/innovspace.png}
-            {
-                The \link{https://sites.google.com/view/innovspace}{InnovSpace} of Supaero
-                \newline
-                (2019 - 2023)
-                \newline
+            \membership[4em]{res/images/innovspace.png}{
+                The \link{https://sites.google.com/view/innovspace}{InnovSpace} of Supaero\newline
+                (2019 - 2023)\newline
             }
         \end{memberships}
 }
 
-
-%-------------------------------------------------------------------------------
-%                     TABLE ENTRIES RIGHT COLUMN: FIRST PAGE
-%-------------------------------------------------------------------------------
 \begin{document}
+    \makefrontsidebar
 
-\makefrontsidebar
-\cvsection{About me \& Objectives}
-    \cvsubsection{
-        Interested in language compilation, safe and structured languages.
-        \newline
-        Interested in distributed computation, cryptographic techniques, zero-knowledge proofs and the Rust
-        programming language as well,
-        I am applying for a thesis with the Dragoon project.
-    }
+    \cvsection{About me \& Objectives}
+        \cvsubsection{
+            Interested in language compilation, safe and structured languages.\newline
+            Interested in distributed computation, cryptographic techniques,
+            zero-knowledge proofs and the Rust programming language as well,
+            I am applying for a thesis with the Dragoon project.
+        }
 
-\cvsection{Working Experience}
-% cd\cvsubsection{Recent experiences.}
-\begin{cvtable}[4]
-    \cvitem
-        {jan. 2023 -- dec. 2026}
-        {fixed-term contract \newline (4 years)}
-        {ISAE-Supaero, Toulouse, France}
-        {
-            Develop and compare ZK protocols applied to sharing and distributing data on peer-to-peer networks.
-            \chartlabel[maincolor]{Distributed storage}
-            \chartlabel[maincolor]{Zero-knowledge proofs}
-            \chartlabel[maincolor]{Rust}
-        }
-    \cvitem
-        {sept. 2022 -- dec. 2022}
-        {internship \newline (4 months)}
-        {ISAE-Supaero, Toulouse, France}
-        {
-            Develop a native compiler for Oberon with the LLVM backend.
-            \chartlabel[maincolor]{Compilation}
-            \chartlabel[maincolor]{Oberon programming language}
-        }
-    \cvitem
-        {april 2022 -- sept. 2022}
-        {$3^{rd}$ year internship (end of study at Supaero) \newline (5 months)}
-        {InstaDeep, Paris}
-        {
-            Advance research and help firms with Multi-Objective RL (MORL).
-            \begin{itemize}
-                \item Explore and benchmark existing MORL algorithms.
-                \item Propose and implement new techniques using RL research.
-                \item Give concrete solutions to be deployed as production tools.
-            \end{itemize}
-            \chartlabel[maincolor]{Multi-Objective RL}
-            \chartlabel[lightblue]{Team work}
-            \chartlabel[lightblue]{Code and ideas coordination}
-        }
-    \cvitem
-        {july 2021 -- august 2021}
-        {$2^{nd}$ year internship \newline (7 weeks)}
-        {SuReLI, ISAE-supaero}
-        {
-            Continuation of the previous research topic of my PIR project:
-            \begin{itemize}
-                \item Further in the disentanglement model \& learning technique.
-            \end{itemize}
-            \chartlabel[maincolor]{Image processing}
-            \chartlabel[maincolor]{Imitation RL}
-            \chartlabel[lightblue]{Autonomy}
-        }
-    \cvitem
-        {january 2021 -- july 2021}
-        {\textit{Innovation \& Research Project} (PIR)\newline (5 months)}
-        {ISAE-Supaero}
-        {
-            First research experience leading to a paper with academic level.\newline
-            Title: \textit{Applying Disentanglement for Domain Adaptation to RL}.
-            \begin{itemize}
-                \item Key questions and techniques of disentanglement.
-                \item Short paper submitted to the ISAE-Supaero.
-            \end{itemize}
-            \chartlabel[maincolor]{Image processing}
-            \chartlabel[maincolor]{Disentanglement RL}
-            \chartlabel[lightblue]{Communication}
-        }
-    \cvitem
-        {nov. 2020 -- april 2021}
-        {Tutor for students \newline (6 months / part-time)}
-        {ISAE-Supaero}
-        {
-            \begin{itemize}
-                \item Organized support sessions about basic or deeper notions.
-                \item Helped students to graduate their $2^{nd}$ year.
-            \end{itemize}
-            \chartlabel[lightblue]{Patience}
-            \chartlabel[lightblue]{Popularization}
-            \chartlabel[lightblue]{Scheduling}
-        }
-\end{cvtable}
-\cvsignature
+    \cvsection{Working Experience}
+        \begin{cvtable}[4]
+            \cvitem
+                {jan. 2023 -- dec. 2026}
+                {fixed-term contract \newline (4 years)}
+                {ISAE-Supaero, Toulouse, France}
+                {
+                    Develop and compare ZK protocols applied to sharing and distributing data on peer-to-peer networks.
+                    \chartlabel[maincolor]{Distributed storage}
+                    \chartlabel[maincolor]{Zero-knowledge proofs}
+                    \chartlabel[maincolor]{Rust}
+                }
+            \cvitem
+                {sept. 2022 -- dec. 2022}
+                {internship \newline (4 months)}
+                {ISAE-Supaero, Toulouse, France}
+                {
+                    Develop a native compiler for Oberon with the LLVM backend.
+                    \chartlabel[maincolor]{Compilation}
+                    \chartlabel[maincolor]{Oberon programming language}
+                }
+            \cvitem
+                {april 2022 -- sept. 2022}
+                {$3^{rd}$ year internship (end of study at Supaero) \newline (5 months)}
+                {InstaDeep, Paris}
+                {
+                    Advance research and help firms with Multi-Objective RL (MORL).
+                    \begin{itemize}
+                        \item Explore and benchmark existing MORL algorithms.
+                        \item Propose and implement new techniques using RL research.
+                        \item Give concrete solutions to be deployed as production tools.
+                    \end{itemize}
+                    \chartlabel[maincolor]{Multi-Objective RL}
+                    \chartlabel[lightblue]{Team work}
+                    \chartlabel[lightblue]{Code and ideas coordination}
+                }
+            \cvitem
+                {july 2021 -- august 2021}
+                {$2^{nd}$ year internship \newline (7 weeks)}
+                {SuReLI, ISAE-supaero}
+                {
+                    Continuation of the previous research topic of my PIR project:
+                    \begin{itemize}
+                        \item Further in the disentanglement model \& learning technique.
+                    \end{itemize}
+                    \chartlabel[maincolor]{Image processing}
+                    \chartlabel[maincolor]{Imitation RL}
+                    \chartlabel[lightblue]{Autonomy}
+                }
+            \cvitem
+                {january 2021 -- july 2021}
+                {\textit{Innovation \& Research Project} (PIR)\newline (5 months)}
+                {ISAE-Supaero}
+                {
+                    First research experience leading to a paper with academic level.\newline
+                    Title: \textit{Applying Disentanglement for Domain Adaptation to RL}.
+                    \begin{itemize}
+                        \item Key questions and techniques of disentanglement.
+                        \item Short paper submitted to the ISAE-Supaero.
+                    \end{itemize}
+                    \chartlabel[maincolor]{Image processing}
+                    \chartlabel[maincolor]{Disentanglement RL}
+                    \chartlabel[lightblue]{Communication}
+                }
+            \cvitem
+                {nov. 2020 -- april 2021}
+                {Tutor for students \newline (6 months / part-time)}
+                {ISAE-Supaero}
+                {
+                    \begin{itemize}
+                        \item Organized support sessions about basic or deeper notions.
+                        \item Helped students to graduate their $2^{nd}$ year.
+                    \end{itemize}
+                    \chartlabel[lightblue]{Patience}
+                    \chartlabel[lightblue]{Popularization}
+                    \chartlabel[lightblue]{Scheduling}
+                }
+        \end{cvtable}
 
-%-------------------------------------------------------------------------------
-%                     TABLE ENTRIES RIGHT COLUMN: SECOND PAGE
-%-------------------------------------------------------------------------------
-\newpage
-\makebacksidebar
-\cvsubsection{Past experiences}
-\begin{cvtable}[2]
-    \cvitem
-        {october 2020 -- may 2021}
-        {Part-time operator \newline (8 months)}
-        {ISAE-Supaero, InnovSpace}
-        {
-            \begin{itemize}
-                \item Managed ISAE-Supaero's InnovSpace during my free-time.
-                \item Watched the place, the tools and helped users.
-            \end{itemize}
-            \chartlabel[maincolor]{Manual tools}
-            \chartlabel[maincolor]{Management}
-            \chartlabel[lightblue]{Autonomy}
-        }
-    \cvitem
-        {july 2020 -- august 2020}
-        {$1^{st}$ year internship\newline (8 weeks)}
-        {Naval Force 3, La Rochelle, France}
-        {
-            Naval Force 3 is a private shipyard (SME) in La Rochelle.
-            \begin{itemize}
-                \item First experience in a firm.
-                \item Discovered how it is managed and difficulties due to crisis.
-            \end{itemize}
-            \chartlabel[maincolor]{Resin-based manufacturating}
-            \chartlabel[lightblue]{Workshop management}
-        }
-    \cvitem
-        {sept. 2018 -- june 2019}
-        {Research school project (TIPE) \newline (9 months / part-time)}
-        {Georges Clemenceau, Nantes, France}
-         {
-            First research experience.
-            \begin{itemize}
-                \item Optimization of the urban space through simulation.
-                \item Learning-based algorithm to facilitate pedestrian traffic.
-            \end{itemize}
-            \chartlabel[maincolor]{Problem statement}
-            \chartlabel[maincolor]{EA}
-            \chartlabel[lightblue]{Communication}
-        }
-\end{cvtable}
+    \cvsignature
+
+    \newpage
+
+    \makebacksidebar
+
+    \cvsubsection{Past experiences}
+        \begin{cvtable}[2]
+            \cvitem
+                {october 2020 -- may 2021}
+                {Part-time operator \newline (8 months)}
+                {ISAE-Supaero, InnovSpace}
+                {
+                    \begin{itemize}
+                        \item Managed ISAE-Supaero's InnovSpace during my free-time.
+                        \item Watched the place, the tools and helped users.
+                    \end{itemize}
+                    \chartlabel[maincolor]{Manual tools}
+                    \chartlabel[maincolor]{Management}
+                    \chartlabel[lightblue]{Autonomy}
+                }
+            \cvitem
+                {july 2020 -- august 2020}
+                {$1^{st}$ year internship\newline (8 weeks)}
+                {Naval Force 3, La Rochelle, France}
+                {
+                    Naval Force 3 is a private shipyard (SME) in La Rochelle.
+                    \begin{itemize}
+                        \item First experience in a firm.
+                        \item Discovered how it is managed and difficulties due to crisis.
+                    \end{itemize}
+                    \chartlabel[maincolor]{Resin-based manufacturating}
+                    \chartlabel[lightblue]{Workshop management}
+                }
+            \cvitem
+               {sept. 2018 -- june 2019}
+               {Research school project (TIPE) \newline (9 months / part-time)}
+               {Georges Clemenceau, Nantes, France}
+                {
+                   First research experience.
+                   \begin{itemize}
+                       \item Optimization of the urban space through simulation.
+                       \item Learning-based algorithm to facilitate pedestrian traffic.
+                   \end{itemize}
+                   \chartlabel[maincolor]{Problem statement}
+                   \chartlabel[maincolor]{EA}
+                   \chartlabel[lightblue]{Communication}
+               }
+        \end{cvtable}
 
 
-\cvsection{Education}
-% \cvsubsection{Study}
-\begin{cvtable}[1.5]
-    \cvitem{2019 -- 2022}{ISAE-Supaero}{Toulouse, France}
-    {
-        The \textit{Aeronautic \& Space Superior Institute} in France. \newline
-        Currently attending the \textit{Data Science \& Decision Making} (SDD) class:
-        \begin{itemize}
-            \item geometrical, probabilistic and connectionist approaches
-            \item commitee-based ML, Deep Learning and RL.
-            \item stochastic optimization and evolution.
-        \end{itemize}
-    }
-    \cvitem{2017 -- 2019}{Preparatory Class [MPSI, MP, computer science]}{Georges Clemenceau High School, Nantes}{French class to prepare for highly selective graduate schools. \newline}
-    \cvitem{2014 -- 2017}{High school [engineering sciences and computer science]}{Léonce Vieljeux High School, France}{Good results in high schools opens the way to preparatory classes after graduation, which are selective classes.}
+    \cvsection{Education}
+        \begin{cvtable}[1.5]
+            \cvitem{2019 -- 2022}{ISAE-Supaero}{Toulouse, France}{
+                The \textit{Aeronautic \& Space Superior Institute} in France. \newline
+                Currently attending the \textit{Data Science \& Decision Making} (SDD) class:
+                \begin{itemize}
+                    \item geometrical, probabilistic and connectionist approaches
+                    \item commitee-based ML, Deep Learning and RL.
+                    \item stochastic optimization and evolution.
+                \end{itemize}
+            }
+            \cvitem{2017 -- 2019}{Preparatory Class [MPSI, MP, computer science]}{Georges Clemenceau High School, Nantes}{French class to prepare for highly selective graduate schools. \newline}
+            \cvitem{2014 -- 2017}{High school [engineering sciences and computer science]}{Léonce Vieljeux High School, France}{Good results in high schools opens the way to preparatory classes after graduation, which are selective classes.}
+        \end{cvtable}
 
-\end{cvtable}
+    %\cvsection{Publications}
 
-%\cvsection{Publications}
-%\cvsection{Awards}
-\cvsection{Diplomas}
-    \cvpubitem{ISAE Supaero}{Engineer graduate diploma}
-        {}{2022}
-    \cvpubitem{Bachelor's degree}{Bachelor science diploma}
-        {}{2020}
-    \cvpubitem{TOEFL PBT}{607/677 (B2/C1)}
-        {}{2019}
-    \cvpubitem{Graduate schools entrance examination}{Successful examination for the highly selective Mines school bank.}
-        {}{2019}
-    \cvpubitem{Baccalauréat (bac)}{Mention: very good}
-        {}{2017}
-\cvsignature
+    %\cvsection{Awards}
 
-\cvsection{Extra-Curricular Activities}
-    \begin{cvtable}
-        \cvitemshort{
-            \includegraphics[scale=0.01]{res/images/arch.png} Arch
-        }{Building software and configuration for my ArchLinux system.}
-        \cvitemshort{\faBook ~ Books}{
-            I follow the \link{https://proto.school/course/ipfs}{\textit{IPFS}},
-            \link{https://doc.rust-lang.org/stable/book/}{Rust},
-            \link{https://www.nushell.sh/book/}{Nushell} and
-            the \textit{Writing A \link{https://compilerbook.com/}{Compiler} / \link{https://interpreterbook.com/}{Interpreter} In Go} books
-        and the \link{https://frontendmasters.com/courses/algorithms/}{Last Algorithms Course You'll Need}.}
-        \cvitemshort{\faCloud ~ Web}{I maintain my personal website and the Oberon compiler portal.}
-        \cvitemshort{\faGamepad ~ Projects}{Web and linux dev in the ISCSC, personal free projets.}
-        \cvitemshort{\faPaintBrush ~ Paint}{Assembly and painting of miniatures.}
-        \cvitemshort{\faPaintBrush ~ Epoxy}{An artistic pane out of wood and resin to decorate my place.}
-        \cvitemshort{\faDesktop ~ Computer}{6502 $\mu$-computer, on breadboard, with custom games in assembly.}
-        \cvitemshort{\faDesktop ~ 8-bit CPU}{A CPU out of logic gates with custom assembly.}
-    \end{cvtable}
-\cvsignature
+    \cvsection{Diplomas}
+        \cvpubitem{ISAE Supaero}{Engineer graduate diploma}{}{2022}
+        \cvpubitem{Bachelor's degree}{Bachelor science diploma}{}{2020}
+        \cvpubitem{TOEFL PBT}{607/677 (B2/C1)}{}{2019}
+        \cvpubitem{Graduate schools entrance examination}{Successful examination for the highly selective Mines school bank.}{}{2019}
+        \cvpubitem{Baccalauréat (bac)}{Mention: very good}{}{2017}
 
+    \cvsignature
+
+    \cvsection{Extra-Curricular Activities}
+        \begin{cvtable}
+            \cvitemshort{\includegraphics[scale=0.01]{res/images/arch.png} Arch}{Building software and configuration for my ArchLinux system.}
+            \cvitemshort{\faBook ~ Books}{
+                I follow the \link{https://proto.school/course/ipfs}{\textit{IPFS}},
+                \link{https://doc.rust-lang.org/stable/book/}{Rust},
+                \link{https://www.nushell.sh/book/}{Nushell} and
+                the \textit{Writing A \link{https://compilerbook.com/}{Compiler} / \link{https://interpreterbook.com/}{Interpreter} In Go} books
+                and the \link{https://frontendmasters.com/courses/algorithms/}{Last Algorithms Course You'll Need}.
+            }
+            \cvitemshort{\faCloud ~ Web}{I maintain my personal website and the Oberon compiler portal.}
+            \cvitemshort{\faGamepad ~ Projects}{Web and linux dev in the ISCSC, personal free projets.}
+            \cvitemshort{\faPaintBrush ~ Paint}{Assembly and painting of miniatures.}
+            \cvitemshort{\faPaintBrush ~ Epoxy}{An artistic pane out of wood and resin to decorate my place.}
+            \cvitemshort{\faDesktop ~ Computer}{6502 $\mu$-computer, on breadboard, with custom games in assembly.}
+            \cvitemshort{\faDesktop ~ 8-bit CPU}{A CPU out of logic gates with custom assembly.}
+        \end{cvtable}
+
+    \cvsignature
 \end{document}
