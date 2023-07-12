@@ -19,7 +19,7 @@ jobs:
         sudo apt install texlive-full latex-mk
 
     - name: build
-      run: ./scripts/resume
+      run: make resume
 
     - name: publish
       uses: softprops/action-gh-release@v0.1.13
