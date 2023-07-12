@@ -25,3 +25,4 @@ jobs:
       uses: softprops/action-gh-release@v0.1.13
       with:
         files: main.pdf
+        body: "## :point_right: [download the resume](https://github.com/amtoine/resume/releases/download/${{ github.ref }}/main.pdf)"
