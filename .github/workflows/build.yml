@@ -18,11 +18,16 @@ jobs:
         sudo apt update && sudo apt upgrade
         sudo apt install texlive-full latex-mk
 
+    - name: date
+      run: echo "resume_file=resume_antoine_stevan_$(date +%Y_%m_%d).pdf" >> "$GITHUB_ENV"
+
     - name: build
-      run: make resume
+      run: |
+        make resume
+        mv main.pdf ${{ env.resume_file }}
 
     - name: publish
       uses: softprops/action-gh-release@v0.1.13
       with:
-        files: main.pdf
-        body: "## :point_right: [download the resume](https://github.com/amtoine/resume/releases/download/${{ github.ref_name }}/main.pdf)"
+        files: ${{ env.resume_file }}
+        body: "## :point_right: [download the resume](https://github.com/amtoine/resume/releases/download/${{ github.ref_name }}/${{ env.resume_file }})"
